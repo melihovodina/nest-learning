@@ -6,9 +6,10 @@ import { User } from "./users/user.model";
 import { RolesController } from './roles/roles.controller';
 import { RolesModule } from './roles/roles.module';
 import { Role } from "./roles/role.model";
+import { UserRoles } from "./roles/userRoles.model";
 
 @Module({
-  controllers: [RolesController],
+  controllers: [],
   providers: [],
   imports: [
     ConfigModule.forRoot({
@@ -21,7 +22,7 @@ import { Role } from "./roles/role.model";
       username: process.env.PG_USER,
       password: process.env.PG_PASSWORD,
       database: process.env.PG_DB,
-      models: [User, Role],
+      models: [User, Role, UserRoles],
       autoLoadModels: true
     }),
     UsersModule,

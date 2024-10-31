@@ -1,0 +1,2 @@
+npm i @nestjs/config - для использования env
+npm i @nestjs/swagger | npm i swagger-ui-express - для документации

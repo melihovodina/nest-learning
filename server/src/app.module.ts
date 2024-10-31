@@ -4,6 +4,8 @@ import { UsersModule } from './users/users.module';
 import { ConfigModule } from "@nestjs/config";
 import { User } from "./users/user.model";
 import { RolesController } from './roles/roles.controller';
+import { RolesModule } from './roles/roles.module';
+import { Role } from "./roles/role.model";
 
 @Module({
   controllers: [RolesController],
@@ -19,10 +21,11 @@ import { RolesController } from './roles/roles.controller';
       username: process.env.PG_USER,
       password: process.env.PG_PASSWORD,
       database: process.env.PG_DB,
-      models: [User],
+      models: [User, Role],
       autoLoadModels: true
     }),
-    UsersModule
+    UsersModule,
+    RolesModule
   ]
 })
 

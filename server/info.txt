@@ -1,2 +1,4 @@
-npm i @nestjs/config - для использования env
-npm i @nestjs/swagger | npm i swagger-ui-express - для документации
+@nestjs/config - использова env
+@nestjs/swagger | swagger-ui-express - документация
+@nestjs/jwt - работа с jwt
+bcryptjs - шифрование

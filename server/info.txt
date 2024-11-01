@@ -2,3 +2,4 @@
 @nestjs/swagger | swagger-ui-express - документация
 @nestjs/jwt - работа с jwt
 bcryptjs - шифрование
+class-validator | class-transformer - валидация
